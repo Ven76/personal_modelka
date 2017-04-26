@@ -1,0 +1,14 @@
+<h3> <%= @person.name %> </h3>
+
+<p> <%= @person.age %> </p>
+
+<p> <%= @person.gender %> </p>
+
+<p> <%= @person.hair_color %> </p>
+
+<p> <%= @person.eye_color %> </p>
+
+<p> <%= @person.alive %> </p>
+
+<%= link_to 'Edit', edit_person_path(@person) %>
+<%= link_to 'Destroy', person_path(@person), method: :delete %>
